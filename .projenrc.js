@@ -5,7 +5,7 @@
 const { awscdk } = require('projen');
 
 const project = new awscdk.AwsCdkConstructLibrary({
-  author: 'wchaws',
+  author: 'retbrown',
   cdkVersion: '1.134.0',
   cdkVersionPinning: false,
   defaultReleaseBranch: 'v1-main',
@@ -20,7 +20,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     },
   },
   jsiiFqn: 'projen.AwsCdkConstructLibrary',
-  name: 'cdk-ecr-deployment',
+  name: 'retbrown-cdk-ecr-deployment',
   projenUpgradeSecret: 'AUTOMATION',
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
@@ -29,8 +29,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   autoApproveUpgrades: true,
   depsUpgrade: true,
   publishToPypi: {
-    distName: 'cdk-ecr-deployment',
-    module: 'cdk_ecr_deployment',
+    distName: 'retbrown-cdk-ecr-deployment',
+    module: 'retbrown_cdk_ecr_deployment',
   }, /* Publish to pypi. */
   bundledDeps: [
     'got',
@@ -54,7 +54,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/aws-lambda',
   ], /* Peer dependencies for this module. */
   // projenCommand: 'npx projen',                                              /* The shell command to use in order to run the projen CLI. */
-  repository: 'https://github.com/cdklabs/cdk-ecr-deployment', /* The repository is the location where the actual code for your package lives. */
+  repository: 'https://github.com/retbrown/retbrown-cdk-ecr-deployment', /* The repository is the location where the actual code for your package lives. */
   gitignore: [
     'cdk.out/',
   ], /* Additional entries to .gitignore. */
